@@ -1,14 +1,173 @@
 <!DOCTYPE HTML>
-<html lang="ja">
+<html>
+
 <head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8">
-<meta http-equiv="content-style-type" content="text/css">
-<meta http-equiv="content-script-type" content="text/javascript">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="author" content="chlorocube">
-<title>chlorocube</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="content-style-type" content="text/css">
+    <meta http-equiv="content-script-type" content="text/javascript">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="author" content="chlorocube">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/common.css">
+    <title>chlorocube</title>
 </head>
+
 <body>
-工事中
+    <div id="root">
+        <header>
+            <img id="logo" src="img/logo_green.png" alt="chlorocube">
+            <p>Welcome to my website. <b>chlorocube</b> is an individual Android developer.</p>
+            <p></p>
+            <br>
+            <a href="https://twitter.com/chlorocube"><img class="common-sns-icon" src="img/twitter.png"></a>
+        </header>
+        <div id="contents">
+            <nav>
+                <div id="menu">
+                    <div tabindex="0" onclick="clickMenu(0)">
+                        <p>WORKS</p>
+                    </div>
+                    <div tabindex="0" onclick="clickMenu(1)">
+                        <p>CONTACT</p>
+                    </div>
+                </div>
+                <div id="select-lang">
+                    <select required>
+                        <option value="1">&nbsp;EN</option>
+                        <option value="2">&nbsp;JP</option>
+                    </select>
+                </div>
+            </nav>
+            <br>
+            <div id="contents-header">
+                <div class="common-button-close" onclick="clickMenu(0)">
+                    <img src="img/close-button.png">
+                </div>
+                <p class="title"></p>
+            </div>
+            <div class="contents-main" id="works">
+                <div class="contents-app" onclick="clickAppMenu(0)">
+                    <div class="thumbnail">
+                        <img class="shadow" src="img/calendar_memo_white_204.png">
+                        <img src="img/calendar_memo_black_204.png">
+                    </div>
+                </div>
+                <div class="contents-app" onclick="clickAppMenu(1)">
+                    <div class="thumbnail">
+                        <img src="img/icon3x3.png">
+                    </div>
+                </div>
+                <div class="contents-app" onclick="clickAppMenu(2)">
+                    <div class="thumbnail">
+                        <img src="img/red_720.png">
+                        <img src="img/blue_720.png">
+                    </div>
+                </div>
+                <div class="contents-app under-development">
+                    <div class="thumbnail">
+                        <div id="snow"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="contents-main" id="contact">
+                <div id="mail">
+                    <img src="img/mail.png">
+                    <div>
+                        <p>chlorocube@gmail.com</p>
+                    </div>
+                </div>
+                <br>
+                <p></p>
+                <p>* I always read every email.</p>
+                <p>* Please note that I may not be able to reply depending on the content of email.</p>
+            </div>
+            <div class="contents-app-page">
+                <div id="calendar-and-memo">
+                    <div>
+                        <p class="label">WHITE ver.</p>
+                        <div class="thumbnail">
+                            <div><img class="shadow" src="img/calendar_memo_white_204.png"></div>
+                            <div><img class="shadow" src="img/calendar_memo_white_list_204.png"></div>
+                            <div><img class="shadow" src="img/calendar_memo_white_edit_204.png"></div>
+                        </div>
+                        <p class="description">* black text & light background</p>
+                        <div class="guide">
+                            <a
+                                href="https://play.google.com/store/apps/details?id=jp.co.chlorocube.simpleschedulewidget&hl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
+                                <img class="common-google-play-badge" src="img/google-play-badge.png"
+                                    alt="Get it on Google Play" />
+                            </a>
+                        </div>
+                        <div class="update-history-header">
+                            <p>UPDATE HISTORY...</p>
+                        </div>
+                        <div class="update-history-contents">
+                        </div>
+                    </div>
+                    <div>
+                        <p class="label">or</p>
+                    </div>
+                    <div>
+                        <p class="label">BLACK ver.</p>
+                        <div class="thumbnail">
+                            <div><img src="img/calendar_memo_black_204.png"></div>
+                            <div><img src="img/calendar_memo_black_list_204.png"></div>
+                            <div><img src="img/calendar_memo_black_edit_204.png"></div>
+                        </div>
+                        <p class="description">* white text & dark background</p>
+                        <div class="guide">
+                            <button class="common-button" onclick="downloadCanedarAndMemoBlack()">DOWNLOAD
+                                APK</button>
+                        </div>
+                        <div class="update-history-header">
+                            <p>UPDATE HISTORY...</p>
+                        </div>
+                        <div class="update-history-contents">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contents-app-page">
+                <div id="icon3x3">
+                    <p>writing...</p>
+                    <div class="guide">
+                        <a
+                            href="https://play.google.com/store/apps/details?id=jp.co.chlorocube.icon3x3space2x2&hl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
+                            <img class="common-google-play-badge" src="img/google-play-badge.png"
+                                alt="Get it on Google Play" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="contents-app-page">
+                <div id="color-picker-demo">
+                    <p>writing...</p>
+                    <div class="guide">
+                        <a
+                            href="https://play.google.com/store/apps/details?id=jp.co.chlorocube.planetcolorpickersample&hl=en&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
+                            <img class="common-google-play-badge" src="img/google-play-badge.png"
+                                alt="Get it on Google Play" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="common-button-to-top"><p>top</p></div>
+        </div>
+    </div>
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/common.js"></script>
+<script>
+    generatePageWorks();
+    clickMenu(0);
+    startThumbnailFade();
+    startThumbnailSnow();
+    initToTopButton();
+    loadHistory();
+</script>
+
 </html>
