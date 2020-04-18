@@ -2,13 +2,13 @@
 var appName = [
     'Calender & Memo',
     'Icon 3x3',
-    'Color Picker Demo',
+    'Planet Color Picker',
     '???',
 ];
 var keyword = [
     ['widget', 'list calendar', 'grid calendar'],
     ['widget', 'shortcut icon', '3x3', '3x1', '2x2'],
-    ['library', 'github'],
+    ['library', 'github', 'open source'],
     ['game', 'puzzle', 'kill time'],
 ];
 var historyCalendarAndMemo = [
@@ -69,6 +69,12 @@ var historyCalendarAndMemoBlack = [
     '- release',
 ];
 var historyIcon3x3 = [
+];
+var historyPlanetColorPicker = [
+    'v1.1.0',
+    '- updated app icon',
+    'v1.0.0',
+    '- release'
 ];
 
 function initToTopButton() {
@@ -226,5 +232,9 @@ function loadHistory() {
 
     $.each(historyCalendarAndMemoBlack, function (index, value) {
         $('.update-history-contents').eq(1).append('<p>' + value + '</p>');
+    });
+
+    $.each(historyPlanetColorPicker, function (index, value) {
+        $('.update-history-contents').eq(2).append('<p>' + value + '</p>');
     });
 }
