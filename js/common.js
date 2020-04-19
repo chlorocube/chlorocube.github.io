@@ -76,6 +76,27 @@ var historyPlanetColorPicker = [
     'v1.0.0',
     '- release'
 ];
+var introductionTxt = [
+    'Welcome to my website. <b>chlorocube</b> is an individual Android developer.',
+    '個人開発 <b>chlorocube</b> のサイト。<br>Android アプリ作ってます。'
+]
+var suffixLanguage = [
+    '&hl=en',
+    '&hl=jp'
+]
+var selectLanguage = 0;
+
+function initLanguage() {
+
+    var language = (window.navigator.languages && window.navigator.languages[0]) ||
+            window.navigator.language ||
+            window.navigator.userLanguage ||
+            window.navigator.browserLanguage;
+    if (language == 'ja') {
+        selectLanguage = 1;
+        $('#select-lang').find('select').val(1);
+    }
+}
 
 function initToTopButton() {
 
@@ -156,6 +177,21 @@ function startThumbnailFade() {
         };
     };
     $(".contents-app").each(switchThumbnail());
+}
+
+function generateText() {
+
+    $('#introduction').html(introductionTxt[selectLanguage]);
+}
+
+function generateStoreLink() {
+
+    $('a').each(function(index, element) {
+        var url = $(element).attr('href');
+        if (url.startsWith('https://play.google.com')) {
+            $(element).attr('href', url.split("&")[0] + suffixLanguage[selectLanguage]);
+        }
+    });
 }
 
 function generatePageWorks() {
