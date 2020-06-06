@@ -12,6 +12,8 @@ var keyword = [
     ['game', 'puzzle', 'kill time'],
 ];
 var historyCalendarAndMemo = [
+    'v1.1.6',
+    '- modified the small bug',
     'v1.1.5',
     '- added wrap text setting of list calendar',
     'v1.1.4',
@@ -54,6 +56,8 @@ var historyCalendarAndMemo = [
     '- adjusted layout',
 ];
 var historyCalendarAndMemoBlack = [
+    'v1.0.6',
+    '- modified the small bug',
     'v1.0.5',
     '- added wrap text setting of list calendar',
     'v1.0.4',
