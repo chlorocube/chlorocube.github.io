@@ -128,7 +128,7 @@ function generateSpeed() {
 }
 
 function downloadCanedarAndMemoBlack() {
-    window.location.href = './app/calendar_and_memo/SimpleScheduleWidgetBlack_v1.0.5_1920020123.apk';
+    window.location.href = './app/calendar_and_memo/SimpleScheduleWidgetBlack_v1.0.6_1920051822.apk';
 }
 
 var isLoadedCalendarAndMemoSlick = false;
