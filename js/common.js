@@ -12,73 +12,118 @@ var keyword = [
     ['game', 'puzzle', 'kill time'],
 ];
 var historyCalendarAndMemo = [
-    'v1.1.6',
-    '- modified the small bug',
-    'v1.1.5',
-    '- added wrap text setting of list calendar',
-    'v1.1.4',
-    '- added show/hide grid setting of grid calendar',
-    'v1.1.3',
-    '- changed that list calendar marks today\'s date',
-    'v1.1.2',
-    '- added header layout setting',
-    'v1.1.1',
-    '- changed that you can register up to three plans a day',
-    '- adjusted badge size setting of grid calendar',
-    'v1.1.0',
-    '- added badge size setting of grid calendar',
-    'v1.0.16',
-    '- added blue saturday setting',
-    '- adjusted badge color of grid calendar',
-    'v1.0.15',
-    '- added day of week language setting (English or local language)',
-    '- bug fix about background color setting dialog in 4.4 and under device',
-    '- changed timing to show review button',
-    '- adjusted layout',
-    'v1.0.14',
-    '- added font size "tiny"',
-    '- added background color setting',
-    'v1.0.12',
-    '- changed timing to get public holidays data',
-    '- added background opacity setting',
-    'v1.0.11',
-    '- bug fix',
-    '- added review button',
-    'v1.0.10',
-    '- renewal of settings',
-    '- added schedule badge function to grid calendar',
-    '- adjusted font size of grid calendar',
-    '- adjusted widget minimum size',
-    'v1.0.9',
-    '- supported grid calendar',
-    '- supported switching between list calendar and grid calendar',
-    '- added new font colors',
-    '- adjusted layout',
+    [
+        'v1.1.6',
+        '- modified the small bug',
+        'v1.1.5',
+        '- added wrap text setting of list calendar',
+        'v1.1.4',
+        '- added show/hide grid setting of grid calendar',
+        'v1.1.3',
+        '- changed that list calendar marks today\'s date',
+        'v1.1.2',
+        '- added header layout setting',
+        'v1.1.1',
+        '- changed that you can register up to three plans a day',
+        '- adjusted badge size setting of grid calendar',
+        'v1.1.0',
+        '- added badge size setting of grid calendar',
+        'v1.0.16',
+        '- added blue saturday setting',
+        '- adjusted badge color of grid calendar',
+        'v1.0.15',
+        '- added day of week language setting (English or local language)',
+        '- bug fix about background color setting dialog in 4.4 and under device',
+        '- changed timing to show review button',
+        '- adjusted layout',
+        'v1.0.14',
+        '- added font size "tiny"',
+        '- added background color setting',
+        'v1.0.12',
+        '- changed timing to get public holidays data',
+        '- added background opacity setting',
+        'v1.0.11',
+        '- bug fix',
+        '- added review button',
+        'v1.0.10',
+        '- renewal of settings',
+        '- added schedule badge function to grid calendar',
+        '- adjusted font size of grid calendar',
+        '- adjusted widget minimum size',
+    ],
+    [
+        'v1.1.6',
+        '- 軽微な不具合の修正',
+        'v1.1.5',
+        '- 縦型カレンダーに「改行して全体を表示する」設定を追加',
+        'v1.1.4',
+        '- 月カレンダーの格子の表示/非表示設定を追加',
+        'v1.1.3',
+        '- 縦型カレンダーで今日の日付をマークするよう変更',
+        'v1.1.2',
+        '- ヘッダーレイアウト設定を追加',
+        'v1.1.1',
+        '- 1日に3つまで予定登録できるよう変更',
+        '- 月カレンダーのバッジサイズを調整',
+        'v1.1.0',
+        '- 月カレンダーのバッジサイズ設定を追加',
+    ]
 ];
 var historyCalendarAndMemoBlack = [
-    'v1.0.6',
-    '- modified the small bug',
-    'v1.0.5',
-    '- added wrap text setting of list calendar',
-    'v1.0.4',
-    '- added show/hide grid setting of grid calendar',
-    'v1.0.3',
-    '- changed that list calendar marks today\'s date',
-    'v1.0.2',
-    '- added header layout setting',
-    'v1.0.1',
-    '- changed that you can register up to three plans a day',
-    '- adjusted badge size setting of grid calendar',
-    'v1.0.0',
-    '- release',
+    [
+        'v1.0.6',
+        '- modified the small bug',
+        'v1.0.5',
+        '- added wrap text setting of list calendar',
+        'v1.0.4',
+        '- added show/hide grid setting of grid calendar',
+        'v1.0.3',
+        '- changed that list calendar marks today\'s date',
+        'v1.0.2',
+        '- added header layout setting',
+        'v1.0.1',
+        '- changed that you can register up to three plans a day',
+        '- adjusted badge size setting of grid calendar',
+        'v1.0.0',
+        '- release',
+    ],
+    [
+        'v1.0.6',
+        '- 軽微な不具合の修正',
+        'v1.0.5',
+        '- 縦型カレンダーに「改行して全体を表示する」設定を追加',
+        'v1.0.4',
+        '- 月カレンダーの格子の表示/非表示設定を追加',
+        'v1.0.3',
+        '- 縦型カレンダーで今日の日付をマークするよう変更',
+        'v1.0.2',
+        '- ヘッダーレイアウト設定を追加',
+        'v1.0.1',
+        '- 1日に3つまで予定登録できるよう変更',
+        '- 月カレンダーのバッジサイズを調整',
+        'v1.0.0',
+        '- リリース',
+    ]
 ];
 var historyIcon3x3 = [
 ];
 var historyPlanetColorPicker = [
-    'v1.1.0',
-    '- updated app icon',
-    'v1.0.0',
-    '- release'
+    [
+        'v1.0.2',
+        '- update SDK version',
+        'v1.0.1',
+        '- updated app icon',
+        'v1.0.0',
+        '- release'
+    ],
+    [
+        'v1.0.2',
+        '- SDKバージョンの更新',
+        'v1.0.1',
+        '- アプリアイコンの更新',
+        'v1.0.0',
+        '- リリース'
+    ]
 ];
 var introductionTxt = [
     'Welcome to my website. <b>chlorocube</b> is an individual Android developer.',
@@ -93,9 +138,9 @@ var selectLanguage = 0;
 function initLanguage() {
 
     var language = (window.navigator.languages && window.navigator.languages[0]) ||
-            window.navigator.language ||
-            window.navigator.userLanguage ||
-            window.navigator.browserLanguage;
+        window.navigator.language ||
+        window.navigator.userLanguage ||
+        window.navigator.browserLanguage;
     if (language == 'ja') {
         selectLanguage = 1;
         $('#select-lang').find('select').val(1);
@@ -190,7 +235,7 @@ function generateText() {
 
 function generateStoreLink() {
 
-    $('a').each(function(index, element) {
+    $('a').each(function (index, element) {
         var url = $(element).attr('href');
         if (url.startsWith('https://play.google.com')) {
             $(element).attr('href', url.split("&")[0] + suffixLanguage[selectLanguage]);
@@ -264,17 +309,20 @@ function clickAppMenu(index) {
         startCalendarAndMemoSlick();
 }
 
-function loadHistory() {
-    
-    $.each(historyCalendarAndMemo, function (index, value) {
+function generateHistory() {
+
+    $('.update-history-contents').eq(0).empty()
+    $.each(historyCalendarAndMemo[selectLanguage], function (index, value) {
         $('.update-history-contents').eq(0).append('<p>' + value + '</p>');
     });
 
-    $.each(historyCalendarAndMemoBlack, function (index, value) {
+    $('.update-history-contents').eq(1).empty()
+    $.each(historyCalendarAndMemoBlack[selectLanguage], function (index, value) {
         $('.update-history-contents').eq(1).append('<p>' + value + '</p>');
     });
 
-    $.each(historyPlanetColorPicker, function (index, value) {
+    $('.update-history-contents').eq(2).empty()
+    $.each(historyPlanetColorPicker[selectLanguage], function (index, value) {
         $('.update-history-contents').eq(2).append('<p>' + value + '</p>');
     });
 }

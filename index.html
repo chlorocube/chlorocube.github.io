@@ -17,7 +17,7 @@
     <div id="root">
         <header>
             <img id="logo" src="img/logo_green.png" alt="chlorocube">
-            <p id="introduction"></p>
+            <p id="introduction"><noscript>Please enable JavaScript. It looks like your JavaScript is disabled.</noscript></p>
             <p></p>
             <br>
             <a href="https://twitter.com/chlorocube"><img class="common-sns-icon" src="img/twitter.png"></a>
@@ -184,12 +184,13 @@
     startThumbnailFade();
     startThumbnailSnow();
     initToTopButton();
-    loadHistory();
+    generateHistory();
 
     $('#select-lang').find('select').change(function() {
         selectLanguage = $('option:selected').val();
         generateText();
         generateStoreLink();
+        generateHistory();
     })
 </script>
 
