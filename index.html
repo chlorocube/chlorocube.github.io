@@ -17,7 +17,8 @@
     <div id="root">
         <header>
             <img id="logo" src="img/logo_green.png" alt="chlorocube">
-            <p id="introduction"><noscript>Please enable JavaScript. It looks like your JavaScript is disabled.</noscript></p>
+            <p id="introduction"><noscript>Please enable JavaScript. It looks like your JavaScript is
+                    disabled.</noscript></p>
             <p></p>
             <br>
             <a href="https://twitter.com/chlorocube"><img class="common-sns-icon" src="img/twitter.png"></a>
@@ -99,10 +100,10 @@
                                     alt="Get it on Google Play" />
                             </a>
                         </div>
-                        <div class="update-history-header">
-                            <p>UPDATE HISTORY...</p>
+                        <div class="feature-header">
+                            <p>FEATURE...</p>
                         </div>
-                        <div class="update-history-contents">
+                        <div class="feature-contents">
                         </div>
                     </div>
                     <div>
@@ -120,6 +121,18 @@
                             <button class="common-button" onclick="downloadCanedarAndMemoBlack()">DOWNLOAD
                                 APK</button>
                         </div>
+                    </div>
+                </div>
+                <div id="calendar-and-memo">
+                    <div>
+                        <div class="update-history-header">
+                            <p>UPDATE HISTORY...</p>
+                        </div>
+                        <div class="update-history-contents">
+                        </div>
+                    </div>
+                    <div></div>
+                    <div>
                         <div class="update-history-header">
                             <p>UPDATE HISTORY...</p>
                         </div>
@@ -132,8 +145,7 @@
                 <div id="icon3x3">
                     <p>writing...</p>
                     <div class="guide">
-                        <a
-                            href="https://play.google.com/store/apps/details?id=jp.co.chlorocube.icon3x3space2x2">
+                        <a href="https://play.google.com/store/apps/details?id=jp.co.chlorocube.icon3x3space2x2">
                             <img class="common-google-play-badge" src="img/google-play-badge.png"
                                 alt="Get it on Google Play" />
                         </a>
@@ -167,7 +179,9 @@
                 </div>
             </div>
             <br>
-            <div class="common-button-to-top"><p>top</p></div>
+            <div class="common-button-to-top">
+                <p>top</p>
+            </div>
         </div>
     </div>
 </body>
@@ -178,19 +192,19 @@
 <script>
     initLanguage();
     generatePageWorks();
-    generateText();
+    generateIntroduction();
     generateStoreLink();
     clickMenu(0);
     startThumbnailFade();
     startThumbnailSnow();
     initToTopButton();
-    generateHistory();
+    generateDocuments();
 
-    $('#select-lang').find('select').change(function() {
+    $('#select-lang').find('select').change(function () {
         selectLanguage = $('option:selected').val();
-        generateText();
+        generateIntroduction();
         generateStoreLink();
-        generateHistory();
+        generateDocuments();
     })
 </script>
 

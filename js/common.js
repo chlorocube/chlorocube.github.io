@@ -11,6 +11,20 @@ var keyword = [
     ['library', 'github', 'open source'],
     ['game', 'puzzle', 'kill time'],
 ];
+var featureCalendarAndMemo = [
+    [
+        '* Calendar Widget',
+        '* Tap the date and enter your plan DIRECTLY',
+        '* Switch list calendar and grid calendar with one tap',
+        '* Supported public holidays'
+    ],
+    [
+        '✓ カレンダーウィジェット',
+        '✓ 日付をタップして予定を記入できる',
+        '✓ 縦型カレンダーと月カレンダーをワンタップ切替で表示',
+        '✓ 祝日対応 (要インターネット接続)',
+    ]
+]
 var historyCalendarAndMemo = [
     [
         'v1.1.6',
@@ -228,7 +242,7 @@ function startThumbnailFade() {
     $(".contents-app").each(switchThumbnail());
 }
 
-function generateText() {
+function generateIntroduction() {
 
     $('#introduction').html(introductionTxt[selectLanguage]);
 }
@@ -309,7 +323,12 @@ function clickAppMenu(index) {
         startCalendarAndMemoSlick();
 }
 
-function generateHistory() {
+function generateDocuments() {
+
+    $('.feature-contents').eq(0).empty()
+    $.each(featureCalendarAndMemo[selectLanguage], function (index, value) {
+        $('.feature-contents').eq(0).append('<p>' + value + '</p>');
+    });
 
     $('.update-history-contents').eq(0).empty()
     $.each(historyCalendarAndMemo[selectLanguage], function (index, value) {
