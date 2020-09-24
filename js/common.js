@@ -27,6 +27,9 @@ var featureCalendarAndMemo = [
 ]
 var historyCalendarAndMemo = [
     [
+        'v1.1.7',
+        '- added button "Add Widget" to ABOUT page (above Android 8.0)',
+        '- changed that list calendar scrolls to today\'s date by tapping the [Return to this month] button',
         'v1.1.6',
         '- modified the small bug',
         'v1.1.5',
@@ -66,6 +69,9 @@ var historyCalendarAndMemo = [
         '- adjusted widget minimum size',
     ],
     [
+        'v1.1.7',
+        '- ABOUTページにウィジェット設定ボタンを追加 (Android 8.0以降)',
+        '- 縦型カレンダーについて、[今月に戻る]ボタンの再タップで今日の日付までスクロールするよう変更',
         'v1.1.6',
         '- 軽微な不具合の修正',
         'v1.1.5',
@@ -85,6 +91,9 @@ var historyCalendarAndMemo = [
 ];
 var historyCalendarAndMemoBlack = [
     [
+        'v1.0.7',
+        '- added button "Add Widget" to ABOUT page (above Android 8.0)',
+        '- changed that list calendar scrolls to today\'s date by tapping the [Return to this month] button',
         'v1.0.6',
         '- modified the small bug',
         'v1.0.5',
@@ -102,6 +111,9 @@ var historyCalendarAndMemoBlack = [
         '- release',
     ],
     [
+        'v1.0.7',
+        '- ABOUTページにウィジェット設定ボタンを追加 (Android 8.0以降)',
+        '- 縦型カレンダーについて、[今月に戻る]ボタンの再タップで今日の日付までスクロールするよう変更',
         'v1.0.6',
         '- 軽微な不具合の修正',
         'v1.0.5',
@@ -187,7 +199,7 @@ function generateSpeed() {
 }
 
 function downloadCanedarAndMemoBlack() {
-    window.location.href = './app/calendar_and_memo/SimpleScheduleWidgetBlack_v1.0.6_1920051822.apk';
+    window.location.href = './app/calendar_and_memo/SimpleScheduleWidgetBlack_v1.0.7_1920091515.apk';
 }
 
 var isLoadedCalendarAndMemoSlick = false;
