@@ -4,11 +4,13 @@ var appName = [
     'Icon 3x3',
     'Planet Color Picker',
     '???',
+    '???',
 ];
 var keyword = [
     ['widget', 'list calendar', 'grid calendar'],
-    ['widget', 'shortcut icon', '3x3', '3x1', '2x2'],
+    ['widget', 'shortcut icon', '3x3', '3x1', '2x2', '1x3'],
     ['library', 'github', 'open source'],
+    ['game', 'widget', 'casual'],
     ['game', 'puzzle', 'kill time'],
 ];
 var featureCalendarAndMemo = [
