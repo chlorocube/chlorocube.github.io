@@ -29,6 +29,11 @@ var featureCalendarAndMemo = [
 ]
 var historyCalendarAndMemo = [
     [
+        'v1.1.9',
+        '- changed the minimum size of widget',
+        '- modified the bug related to backup files on Android 10 or higher',
+        'v1.1.8',
+        '- added schedule-lock setting',
         'v1.1.7',
         '- added button "Add Widget" to ABOUT page (above Android 8.0)',
         '- changed that list calendar scrolls to today\'s date by tapping the [Return to this month] button',
@@ -71,6 +76,11 @@ var historyCalendarAndMemo = [
         '- adjusted widget minimum size',
     ],
     [
+        'v1.1.9',
+        '- ウィジェットの最小サイズを変更',
+        '- Android 10以降の端末でのバックアップファイル出力不具合を修正',
+        'v1.1.8',
+        '- 予約編集のロックON/OFF設定を追加',
         'v1.1.7',
         '- ABOUTページにウィジェット設定ボタンを追加 (Android 8.0以降)',
         '- 縦型カレンダーについて、[今月に戻る]ボタンの再タップで今日の日付までスクロールするよう変更',
@@ -93,6 +103,11 @@ var historyCalendarAndMemo = [
 ];
 var historyCalendarAndMemoBlack = [
     [
+        'v1.0.9',
+        '- changed the minimum size of widget',
+        '- modified the bug related to backup files on Android 10 or higher',
+        'v1.0.8',
+        '- added schedule-lock setting',
         'v1.0.7',
         '- added button "Add Widget" to ABOUT page (above Android 8.0)',
         '- changed that list calendar scrolls to today\'s date by tapping the [Return to this month] button',
@@ -113,6 +128,11 @@ var historyCalendarAndMemoBlack = [
         '- release',
     ],
     [
+        'v1.0.9',
+        '- ウィジェットの最小サイズを変更',
+        '- Android 10以降の端末でのバックアップファイル出力不具合を修正',
+        'v1.0.8',
+        '- 予約編集のロックON/OFF設定を追加',
         'v1.0.7',
         '- ABOUTページにウィジェット設定ボタンを追加 (Android 8.0以降)',
         '- 縦型カレンダーについて、[今月に戻る]ボタンの再タップで今日の日付までスクロールするよう変更',
@@ -201,7 +221,7 @@ function generateSpeed() {
 }
 
 function downloadCanedarAndMemoBlack() {
-    window.location.href = './app/calendar_and_memo/SimpleScheduleWidgetBlack_v1.0.7_1920091515.apk';
+    window.location.href = './app/calendar_and_memo/SimpleScheduleWidgetBlack_v1.0.9_1921012222.apk';
 }
 
 var isLoadedCalendarAndMemoSlick = false;
