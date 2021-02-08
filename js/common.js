@@ -2,13 +2,15 @@
 var appName = [
     'Calender & Memo',
     'Icon 3x3',
+    'GitHub Widget',
     'Planet Color Picker',
     '???',
     '???',
 ];
 var keyword = [
     ['widget', 'list calendar', 'grid calendar'],
-    ['widget', 'shortcut icon', '3x3', '3x1', '2x2', '1x3'],
+    ['widget', 'shortcut icon', '3x3', '3x1', '2x2', '1x3', '2x1'],
+    ['widget', 'github'],
     ['library', 'github', 'open source'],
     ['game', 'widget', 'casual'],
     ['game', 'puzzle', 'kill time'],
@@ -25,6 +27,22 @@ var featureCalendarAndMemo = [
         '✓ 日付をタップして予定を記入できる',
         '✓ 縦型カレンダーと月カレンダーをワンタップ切替で表示',
         '✓ 祝日対応 (要インターネット接続)',
+    ]
+]
+var featureGitHubWidget = [
+    [
+        'GitHub contributions widget.',
+        'This app is iOS official widget looks-alike.',
+        '　',
+        '* color changing',
+        '* size & margin changing',
+    ],
+    [
+        'GitHub contribution ウィジェット。',
+        '公式のiOSウィジェットに似せて作ってみた。',
+        '　',
+        '✓ 色変更',
+        '✓ サイズ・余白変更',
     ]
 ]
 var historyCalendarAndMemo = [
@@ -157,6 +175,8 @@ var historyIcon3x3 = [
 ];
 var historyPlanetColorPicker = [
     [
+        'v1.0.3',
+        '- update SDK version',
         'v1.0.2',
         '- update SDK version',
         'v1.0.1',
@@ -165,6 +185,8 @@ var historyPlanetColorPicker = [
         '- release'
     ],
     [
+        'v1.0.3',
+        '- SDKバージョンの更新',
         'v1.0.2',
         '- SDKバージョンの更新',
         'v1.0.1',
@@ -359,8 +381,12 @@ function clickAppMenu(index) {
 
 function generateDocuments() {
 
-    $('.feature-contents').eq(0).empty()
+    $('.feature-contents-calendar').eq(0).empty()
     $.each(featureCalendarAndMemo[selectLanguage], function (index, value) {
+        $('.feature-contents-calendar').eq(0).append('<p>' + value + '</p>');
+    });
+    $('.feature-contents').eq(0).empty()
+    $.each(featureGitHubWidget[selectLanguage], function (index, value) {
         $('.feature-contents').eq(0).append('<p>' + value + '</p>');
     });
 
