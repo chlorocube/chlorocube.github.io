@@ -9,7 +9,7 @@ var appName = [
 ];
 var keyword = [
     ['widget', 'list calendar', 'grid calendar'],
-    ['widget', 'shortcut icon', '3x3', '3x1', '2x2', '1x3', '2x1'],
+    ['widget', 'shortcut icon', '3x3', '3x1', '2x2', '1x3', '2x1', '2x3', '3x4', '3x2'],
     ['widget', 'github'],
     ['library', 'github', 'open source'],
     ['game', 'widget', 'casual'],
