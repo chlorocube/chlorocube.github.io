@@ -47,6 +47,16 @@ var featureGitHubWidget = [
 ]
 var historyCalendarAndMemo = [
     [
+        'v1.2.0',
+        '- Added backup file output to Google Drive in Settings',
+        '- Added manual acquisition of public holidays in Settings',
+        'v1.1.12',
+        '- Changed the data recovery procedure to let the user select files',
+        '- Fixed the backup file output destination to Documents folder for Android 10 and later devices',
+        'v1.1.11',
+        '- fixed day of the week display in text search function',
+        'v1.1.10',
+        '- added text search function',
         'v1.1.9',
         '- changed the minimum size of widget',
         '- modified the bug related to backup files on Android 10 or higher',
@@ -94,6 +104,16 @@ var historyCalendarAndMemo = [
         '- adjusted widget minimum size',
     ],
     [
+        'v1.2.0',
+        '- 設定にGoogleドライブへのバックアップファイル出力を追加',
+        '- 設定に祝日データの手動取得を追加',
+        'v1.1.12',
+        '- データ復元方法をファイル選択方式に変更',
+        '- Android 10以降の端末でのバックアップファイル出力先をDocumentsフォルダに修正',
+        'v1.1.11',
+        '- 本文検索機能について曜日表示の修正',
+        'v1.1.10',
+        '- 本文検索機能の追加',
         'v1.1.9',
         '- ウィジェットの最小サイズを変更',
         '- Android 10以降の端末でのバックアップファイル出力不具合を修正',
@@ -121,6 +141,16 @@ var historyCalendarAndMemo = [
 ];
 var historyCalendarAndMemoBlack = [
     [
+        'v1.2.0',
+        '- Added backup file output to Google Drive in Settings',
+        '- Added manual acquisition of public holidays in Settings',
+        'v1.0.12',
+        '- Changed the data recovery procedure to let the user select files',
+        '- Fixed the backup file output destination to Documents folder for Android 10 and later devices',
+        'v1.0.11',
+        '- fixed day of the week display in text search function',
+        'v1.0.10',
+        '- added text search function',
         'v1.0.9',
         '- changed the minimum size of widget',
         '- modified the bug related to backup files on Android 10 or higher',
@@ -146,6 +176,16 @@ var historyCalendarAndMemoBlack = [
         '- release',
     ],
     [
+        'v1.2.0',
+        '- 設定にGoogleドライブへのバックアップファイル出力を追加',
+        '- 設定に祝日データの手動取得を追加',
+        'v1.0.12',
+        '- データ復元方法をファイル選択方式に変更',
+        '- Android 10以降の端末でのバックアップファイル出力先をDocumentsフォルダに修正',
+        'v1.0.11',
+        '- 本文検索機能について曜日表示の修正',
+        'v1.0.10',
+        '- 本文検索機能の追加',
         'v1.0.9',
         '- ウィジェットの最小サイズを変更',
         '- Android 10以降の端末でのバックアップファイル出力不具合を修正',
@@ -243,7 +283,7 @@ function generateSpeed() {
 }
 
 function downloadCanedarAndMemoBlack() {
-    window.location.href = './app/calendar_and_memo/SimpleScheduleWidgetBlack_v1.0.9_1921012222.apk';
+    window.location.href = './app/calendar_and_memo/SimpleScheduleWidgetBlack_v1.2.0_1922012800.apk';
 }
 
 var isLoadedCalendarAndMemoSlick = false;
