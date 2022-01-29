@@ -1,21 +1,34 @@
 ﻿
-var appName = [
-    'Calender & Memo',
-    'Icon 3x3',
-    'GitHub Widget',
-    'Planet Color Picker',
-    '???',
-    '???',
+const appName = [
+    [
+        'Calender & Memo',
+        'Icon 3x3',
+        'A words bird',
+        'GitHub Widget',
+        'Planet Color Picker',
+        '???',
+        '???',
+    ],
+    [
+        'カレンダー & メモ',
+        'Icon 3x3',
+        'ひとこと小鳥',
+        'GitHub Widget',
+        'Planet Color Picker',
+        '???',
+        '???',
+    ]
 ];
-var keyword = [
+const keyword = [
     ['widget', 'list calendar', 'grid calendar'],
     ['widget', 'shortcut icon', '3x3', '3x1', '2x2', '1x3', '2x1', '2x3', '3x4', '3x2'],
+    ['tool', 'communication', 'Wi-Fi'],
     ['widget', 'github'],
     ['library', 'github', 'open source'],
     ['game', 'widget', 'casual'],
     ['game', 'puzzle', 'kill time'],
 ];
-var featureCalendarAndMemo = [
+const featureCalendarAndMemo = [
     [
         '* Calendar Widget',
         '* Tap the date and enter your plan DIRECTLY',
@@ -29,7 +42,7 @@ var featureCalendarAndMemo = [
         '✓ 祝日対応 (要インターネット接続)',
     ]
 ]
-var featureGitHubWidget = [
+const featureGitHubWidget = [
     [
         'GitHub contributions widget.',
         'This app is iOS official widget looks-alike.',
@@ -45,7 +58,7 @@ var featureGitHubWidget = [
         '✓ サイズ・余白変更',
     ]
 ]
-var historyCalendarAndMemo = [
+const historyCalendarAndMemo = [
     [
         'v1.2.0',
         '- Added backup file output to Google Drive in Settings',
@@ -139,7 +152,7 @@ var historyCalendarAndMemo = [
         '- 月カレンダーのバッジサイズ設定を追加',
     ]
 ];
-var historyCalendarAndMemoBlack = [
+const historyCalendarAndMemoBlack = [
     [
         'v1.2.0',
         '- Added backup file output to Google Drive in Settings',
@@ -211,9 +224,9 @@ var historyCalendarAndMemoBlack = [
         '- リリース',
     ]
 ];
-var historyIcon3x3 = [
+const historyIcon3x3 = [
 ];
-var historyPlanetColorPicker = [
+const historyPlanetColorPicker = [
     [
         'v1.0.3',
         '- update SDK version',
@@ -235,11 +248,11 @@ var historyPlanetColorPicker = [
         '- リリース'
     ]
 ];
-var introductionTxt = [
-    'Welcome to my website. <b>chlorocube</b> is an individual Android developer.',
+const introductionTxt = [
+    'Welcome to my website. <b>chlorocube</b> is an indie Android developer.',
     '個人開発 <b>chlorocube</b> のサイト。<br>Android アプリ作ってます。'
 ]
-var suffixLanguage = [
+const suffixLanguage = [
     '&hl=en',
     '&hl=jp'
 ]
@@ -364,12 +377,23 @@ function generatePageWorks() {
                 };
             };
 
-            $(this).prepend('<p>' + appName[index] + '</p>');
+            $(this).prepend('<p>' + appName[selectLanguage][index] + '</p>');
             $(this).append('<div class="keyword"></div>');
             $(this).find('.keyword').each(generateKeyword(keyword[index]));
         };
     };
     $('.contents-app').each(generateContents());
+}
+
+function regeneratePageWorks() {
+
+    var regenerateContents = function () {
+        return function (index, element) {
+            $(this).find("p").remove();
+            $(this).prepend('<p>' + appName[selectLanguage][index] + '</p>');
+        };
+    };
+    $('.contents-app').each(regenerateContents());
 }
 
 function clickMenu(index) {
@@ -402,7 +426,7 @@ function clickAppMenu(index) {
     $('#menu').css('opacity', '0.3');
     $('.contents-main').hide();
 
-    $('#contents-header').find('p').text(appName[index]);
+    $('#contents-header').find('p').text(appName[selectLanguage][index]);
     $('#contents-header').show();
 
     var switchContents = function (index) {
