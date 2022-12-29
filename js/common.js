@@ -5,6 +5,7 @@ const appName = [
         'Icon 3x3',
         'A words bird',
         'GitHub Widget',
+        'Battery Widget',
         'Planet Color Picker',
         '???',
         '???',
@@ -14,6 +15,7 @@ const appName = [
         'Icon 3x3',
         'ひとこと小鳥',
         'GitHub Widget',
+        'Battery Widget',
         'Planet Color Picker',
         '???',
         '???',
@@ -24,6 +26,7 @@ const keyword = [
     ['widget', 'shortcut icon', '3x3', '3x1', '2x2', '1x3', '2x1', '2x3', '3x4', '3x2'],
     ['tool', 'communication', 'Wi-Fi'],
     ['widget', 'github'],
+    ['widget', 'battery'],
     ['library', 'github', 'open source'],
     ['game', 'widget', 'casual'],
     ['game', 'puzzle', 'kill time'],
@@ -422,7 +425,7 @@ function generatePageWorks() {
 }
 
 function regeneratePageWorks() {
-
+    
     var regenerateContents = function () {
         return function (index, element) {
             $(this).find("p").remove();
