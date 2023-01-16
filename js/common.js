@@ -3,6 +3,7 @@ const appName = [
     [
         'Calender & Memo',
         'Icon 3x3',
+        'Cute Note Widget',
         'GitHub Widget',
         'Battery Widget',
         'Photo Widget for Twitter',
@@ -14,6 +15,7 @@ const appName = [
     [
         'カレンダー & メモ',
         'Icon 3x3',
+        'かわいいメモ ウィジェット',
         'GitHub Widget',
         'Battery Widget',
         'Photo Widget for Twitter',
@@ -26,6 +28,7 @@ const appName = [
 const keyword = [
     ['widget', 'list calendar', 'grid calendar'],
     ['widget', 'shortcut icon', '3x3', '3x1', '2x2', '1x3', '2x1', '2x3', '3x4', '3x2'],
+    ['widget', 'memo', 'note'],
     ['widget', 'github'],
     ['widget', 'battery'],
     ['widget', 'twitter', 'photo'],
@@ -46,6 +49,26 @@ const featureCalendarAndMemo = [
         '✓ 日付をタップして予定を記入できる',
         '✓ 縦型カレンダーと月カレンダーをワンタップ切替で表示',
         '✓ 祝日対応 (要インターネット接続)',
+    ]
+]
+const featureCuteMemoWidget = [
+    [
+        'This is a note widget that can be placed on your home screen.',
+        'Sophisticated, pretty, and easy-to-read design.',
+        '　',
+        '* Place multiple notes',
+        '* Change background design & color',
+        '* Change text font, text size, and text color',
+        '* Change widget size',
+    ],
+    [
+        'ホーム画面に置けるメモウィジェットです。',
+        '大人かわいい、でもかわいすぎない、きれいで見やすいデザインを揃えました。',
+        '　',
+        '✻ 複数のメモを置けます',
+        '✻ 背景デザインの変更＆色変更',
+        '✻ 文字フォント＆文字サイズ＆文字色の変更',
+        '✻ ウィジェットサイズの変更',
     ]
 ]
 const featureGitHubWidget = [
@@ -491,9 +514,13 @@ function generateDocuments() {
     $.each(featureCalendarAndMemo[selectLanguage], function (index, value) {
         $('.feature-contents-calendar').eq(0).append('<p>' + value + '</p>');
     });
-    $('.feature-contents').eq(0).empty()
+    $('.feature-contents-cute-memo-widget').eq(0).empty()
+    $.each(featureCuteMemoWidget[selectLanguage], function (index, value) {
+        $('.feature-contents-cute-memo-widget').eq(0).append('<p>' + value + '</p>');
+    });
+    $('.feature-contents-github-contributions').eq(0).empty()
     $.each(featureGitHubWidget[selectLanguage], function (index, value) {
-        $('.feature-contents').eq(0).append('<p>' + value + '</p>');
+        $('.feature-contents-github-contributions').eq(0).append('<p>' + value + '</p>');
     });
 
     $('.update-history-contents').eq(0).empty()
