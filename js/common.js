@@ -89,6 +89,10 @@ const featureGitHubWidget = [
 ]
 const historyCalendarAndMemo = [
     [
+        'v1.3.3',
+        '- added a function to immediately jump to the calendar for the year and month of the plan by tapping the icon on the right side of each plan in the search results',
+        'v1.3.2',
+        '- fixed minor bugs',
         'v1.3.1',
         '- added numerical editing function for background color and opacity',
         'v1.3.0',
@@ -153,6 +157,10 @@ const historyCalendarAndMemo = [
         '- adjusted widget minimum size',
     ],
     [
+        'v1.3.3',
+        '- 検索結果の各予定の右端のアイコンをタップすることで、その予定年月のカレンダーに即ジャンプする機能を追加',
+        'v1.3.2',
+        '- 軽微な不具合の修正',
         'v1.3.1',
         '- 背景の色と透明度について、数値編集による変更機能を追加',
         'v1.3.0',
@@ -322,6 +330,7 @@ const suffixLanguage = [
     '&hl=jp'
 ]
 var selectLanguage = 0;
+var selectAppIndex = 0;
 
 function initLanguage() {
 
@@ -358,10 +367,6 @@ function generateSpeed() {
     var items = [5000, 5250, 5500, 5750, 6000, 6250, 6500, 6750];
     var index = Math.floor(Math.random() * items.length);
     return items[index];
-}
-
-function downloadCanedarAndMemoBlack() {
-    window.location.href = './app/calendar_and_memo/SimpleScheduleWidgetBlack_v1.2.0_1922012800.apk';
 }
 
 var isLoadedCalendarAndMemoSlick = false;
@@ -506,9 +511,16 @@ function clickAppMenu(index) {
 
     if (index == 0)
         startCalendarAndMemoSlick();
+
+    selectAppIndex = index;
 }
 
 function generateDocuments() {
+
+    if ($('#contents-header').is(":visible")) {
+        $('#contents-header').find('p').empty();
+        $('#contents-header').find('p').text(appName[selectLanguage][selectAppIndex]);
+    }
 
     $('.feature-contents-calendar').eq(0).empty()
     $.each(featureCalendarAndMemo[selectLanguage], function (index, value) {
