@@ -62,6 +62,10 @@ const featureCuteMemoWidget = [
         '* Change widget size',
     ],
     [
+        '<font color="#e95464"><b>Appliv（アプリヴ）様に素敵なレビューを掲載していただきました！！</b></font>',
+        '<a href="https://app-liv.jp/5346094/">https://app-liv.jp/5346094/</a>',
+        '　',
+        '　',
         'ホーム画面に置けるメモウィジェットです。',
         '大人かわいい、でもかわいすぎない、きれいで見やすいデザインを揃えました。',
         '　',
