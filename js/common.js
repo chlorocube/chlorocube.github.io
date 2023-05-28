@@ -2,8 +2,9 @@
 const appName = [
     [
         'Calender & Memo',
-        'Icon 3x3',
         'Cute Note Widget',
+        'Mosquito Coil Pig',
+        'Icon 3x3',
         'GitHub Widget',
         'Battery Widget',
         'Photo Widget for Twitter',
@@ -14,8 +15,9 @@ const appName = [
     ],
     [
         'カレンダー & メモ',
-        'Icon 3x3',
         'かわいいメモ ウィジェット',
+        '蚊取線香のぶた',
+        'Icon 3x3',
         'GitHub Widget',
         'Battery Widget',
         'Photo Widget for Twitter',
@@ -27,8 +29,9 @@ const appName = [
 ];
 const keyword = [
     ['widget', 'list calendar', 'grid calendar'],
-    ['widget', 'shortcut icon', '3x3', '3x1', '2x2', '1x3', '2x1', '2x3', '3x4', '3x2'],
     ['widget', 'memo', 'note'],
+    ['widget', 'accessories', 'japanese summer'],
+    ['widget', 'shortcut icon', '3x3', '3x1', '2x2', '1x3', '2x1', '2x3', '3x4', '3x2'],
     ['widget', 'github'],
     ['widget', 'battery'],
     ['widget', 'twitter', 'photo'],
@@ -73,6 +76,31 @@ const featureCuteMemoWidget = [
         '✻ 背景デザインの変更＆色変更',
         '✻ 文字フォント＆文字サイズ＆文字色の変更',
         '✻ ウィジェットサイズの変更',
+    ]
+]
+const featureMosquitoCoil = [
+    [
+        'Cute mosquito coil pig widget.',
+        'Smoke billows from his mouth.',
+        'Mosquito pig is one of Japan\'s summer traditions. It is a mosquito coil holder in the shape of a pig, often used in traditional Japanese gardens and porches.',
+        '　',
+        '<font color="#e95464"><b>Acrylic key chains are also available at SUZURI !!</b></font>',
+        '<a href="https://suzuri.jp/chlorocube">chlorocube SHOP</a>',
+        '<a href="https://suzuri.jp/chlorocube"><img src="img/pig_shop.png" class="contents-app-page-preview"></a>',
+        '　',
+        '* Pig color changing',
+        '* Pig orientation changing',
+    ],
+    [
+        'かわいい蚊遣り豚のウィジェットです。',
+        '煙がもくもくします。',
+        '　',
+        '<font color="#e95464"><b>アクリルキーホルダーも SUZURI にて発売中！</b></font>',
+        '<a href="https://suzuri.jp/chlorocube">chlorocube SHOP</a>',
+        '<a href="https://suzuri.jp/chlorocube"><img src="img/pig_shop.png" class="contents-app-page-preview"></a>',
+        '　',
+        '✓ ぶたの色変更',
+        '✓ ぶたの向き変更',
     ]
 ]
 const featureGitHubWidget = [
@@ -533,6 +561,10 @@ function generateDocuments() {
     $('.feature-contents-cute-memo-widget').eq(0).empty()
     $.each(featureCuteMemoWidget[selectLanguage], function (index, value) {
         $('.feature-contents-cute-memo-widget').eq(0).append('<p>' + value + '</p>');
+    });
+    $('.feature-contents-mosquito-coil').eq(0).empty()
+    $.each(featureMosquitoCoil[selectLanguage], function (index, value) {
+        $('.feature-contents-mosquito-coil').eq(0).append('<p>' + value + '</p>');
     });
     $('.feature-contents-github-contributions').eq(0).empty()
     $.each(featureGitHubWidget[selectLanguage], function (index, value) {
