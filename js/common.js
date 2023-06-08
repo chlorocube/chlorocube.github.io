@@ -92,6 +92,13 @@ const featureMosquitoCoil = [
         '* Pig orientation changing',
     ],
     [
+        '<font color="#e95464"><b>Appliv（アプリヴ）様に素敵なレビューを掲載していただきました！！</b></font>',
+        '<small>文章のうまさもさることながら、言葉のチョイスが絶妙で最高ですね！</small>',
+        '<a href="https://app-liv.jp/5347347/">https://app-liv.jp/5347347/</a>',
+        '　',
+        '　',
+        '----',
+        '　',
         'かわいい蚊遣り豚のウィジェットです。',
         '煙がもくもくします。',
         '　',
