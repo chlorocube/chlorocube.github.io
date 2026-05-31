@@ -1,44 +1,38 @@
 ﻿
 const appName = [
     [
-        'Calender & Memo',
         'Cute Note Widget',
+        'Antique Clock Widget',
+        'Calender & Memo',
+        'GitHub Widget',
         'Mosquito Coil Pig',
         'Icon 3x3',
-        'GitHub Widget',
         'Battery Widget',
-        'Photo Widget for Twitter',
-        'A words bird',
         'Planet Color Picker',
-        '???',
-        '???',
+        '???'
     ],
     [
+        'かわいいメモ Widget',
+        'アンティーク時計',
         'カレンダー & メモ',
-        'かわいいメモ ウィジェット',
+        'GitHub Widget',
         '蚊取線香のぶた',
         'Icon 3x3',
-        'GitHub Widget',
         'Battery Widget',
-        'Photo Widget for Twitter',
-        'ひとこと小鳥',
         'Planet Color Picker',
-        '???',
-        '???',
+        '???'
     ]
 ];
 const keyword = [
-    ['widget', 'list calendar', 'grid calendar'],
     ['widget', 'memo', 'note'],
+    ['widget', 'analog clock'],
+    ['widget', 'list calendar', 'grid calendar'],
+    ['widget', 'github'],
     ['widget', 'accessories', 'japanese summer'],
     ['widget', 'shortcut icon', '3x3', '3x1', '2x2', '1x3', '2x1', '2x3', '3x4', '3x2'],
-    ['widget', 'github'],
     ['widget', 'battery'],
-    ['widget', 'twitter', 'photo'],
-    ['tool', 'communication', 'Wi-Fi'],
     ['library', 'github', 'open source'],
-    ['game', 'widget', 'casual'],
-    ['game', 'puzzle', 'kill time'],
+    ['game', 'puzzle', 'kill time']
 ];
 const featureCalendarAndMemo = [
     [
@@ -78,6 +72,33 @@ const featureCuteMemoWidget = [
         '✻ ウィジェットサイズの変更',
     ]
 ]
+const featureAntiqueClockWidget = [
+    [
+        'Beautiful analog clock widget with historical and ornamental hands',
+        '　',
+        '✓ Historical clock tower hands from around the world',
+        '✓ Second hand feature',
+        '✓ Customize colors for hands, numerals, scale, and background',
+        '✓ Customize background image',
+        '✓ Resizable widgets (*Android only)',
+        '　',
+        '　',
+        '<a href="app/antique_clock/privacy_policy.html">Privacy Policy</a>',
+    ],
+    [
+        'レトロで装飾的な針が美しいアナログ時計のウィジェット',
+        '　',
+        '✓ 世界中の歴史的な時計塔の針のセレクション',
+        '✓ 秒針機能',
+        '✓ 各色の変更 (針/数字/目盛り/背景)',
+        '✓ 背景画像の変更',
+        '　スマホ内の画像を選択できます',
+        '✓ ウィジェットのサイズ変更 (※Androidのみ)',
+        '　',
+        '　',
+        '<a href="app/antique_clock/privacy_policy.html">Privacy Policy</a>',
+    ]
+]
 const featureMosquitoCoil = [
     [
         'Cute mosquito coil pig widget.',
@@ -86,14 +107,13 @@ const featureMosquitoCoil = [
         '　',
         '<font color="#e95464"><b>Acrylic key chains are also available at SUZURI !!</b></font>',
         '<a href="https://suzuri.jp/chlorocube">chlorocube SHOP</a>',
-        '<a href="https://suzuri.jp/chlorocube"><img src="img/pig_shop.png" class="contents-app-page-preview"></a>',
+        '<a href="https://suzuri.jp/chlorocube"><img src="img/header_pig_shop.png" class="contents-app-page-preview"></a>',
         '　',
         '* Pig color changing',
         '* Pig orientation changing',
     ],
     [
         '<font color="#e95464"><b>Appliv（アプリヴ）様に素敵なレビューを掲載していただきました！！</b></font>',
-        '<small>文章のうまさもさることながら、言葉のチョイスが絶妙で最高ですね！</small>',
         '<a href="https://app-liv.jp/5347347/">https://app-liv.jp/5347347/</a>',
         '　',
         '　',
@@ -104,7 +124,7 @@ const featureMosquitoCoil = [
         '　',
         '<font color="#e95464"><b>アクリルキーホルダーも SUZURI にて発売中！</b></font>',
         '<a href="https://suzuri.jp/chlorocube">chlorocube SHOP</a>',
-        '<a href="https://suzuri.jp/chlorocube"><img src="img/pig_shop.png" class="contents-app-page-preview"></a>',
+        '<a href="https://suzuri.jp/chlorocube"><img src="img/header_pig_shop.png" class="contents-app-page-preview"></a>',
         '　',
         '✓ ぶたの色変更',
         '✓ ぶたの向き変更',
@@ -361,8 +381,8 @@ const historyPlanetColorPicker = [
     ]
 ];
 const introductionTxt = [
-    'Welcome to my website. <b>chlorocube</b> is an indie Android developer.',
-    '個人開発 <b>chlorocube</b> のサイト。<br>Android アプリ作ってます。'
+    'Welcome to my website.<br><b>chlorocube</b> is an indie app developer.',
+    '個人開発 <b>chlorocube</b> のサイト。<br>Android/IOS アプリ作ってます。'
 ]
 const suffixLanguage = [
     '&hl=en',
@@ -548,7 +568,7 @@ function clickAppMenu(index) {
     };
     $('.contents-app-page').each(switchContents(index));
 
-    if (index == 0)
+    if (index == 2)
         startCalendarAndMemoSlick();
 
     selectAppIndex = index;
@@ -561,13 +581,17 @@ function generateDocuments() {
         $('#contents-header').find('p').text(appName[selectLanguage][selectAppIndex]);
     }
 
-    $('.feature-contents-calendar').eq(0).empty()
-    $.each(featureCalendarAndMemo[selectLanguage], function (index, value) {
-        $('.feature-contents-calendar').eq(0).append('<p>' + value + '</p>');
-    });
     $('.feature-contents-cute-memo-widget').eq(0).empty()
     $.each(featureCuteMemoWidget[selectLanguage], function (index, value) {
         $('.feature-contents-cute-memo-widget').eq(0).append('<p>' + value + '</p>');
+    });
+    $('.feature-contents-antique-clock-widget').eq(0).empty()
+    $.each(featureAntiqueClockWidget[selectLanguage], function (index, value) {
+        $('.feature-contents-antique-clock-widget').eq(0).append('<p>' + value + '</p>');
+    });
+    $('.feature-contents-calendar').eq(0).empty()
+    $.each(featureCalendarAndMemo[selectLanguage], function (index, value) {
+        $('.feature-contents-calendar').eq(0).append('<p>' + value + '</p>');
     });
     $('.feature-contents-mosquito-coil').eq(0).empty()
     $.each(featureMosquitoCoil[selectLanguage], function (index, value) {
