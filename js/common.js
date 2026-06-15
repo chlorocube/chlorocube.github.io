@@ -7,7 +7,6 @@ const appName = [
         'GitHub Widget',
         'Mosquito Coil Pig',
         'Icon 3x3',
-        'Battery Widget',
         'Planet Color Picker',
         '???'
     ],
@@ -18,7 +17,6 @@ const appName = [
         'GitHub Widget',
         '蚊取線香のぶた',
         'Icon 3x3',
-        'Battery Widget',
         'Planet Color Picker',
         '???'
     ]
@@ -30,7 +28,6 @@ const keyword = [
     ['widget', 'github'],
     ['widget', 'accessories', 'japanese summer'],
     ['widget', 'shortcut icon', '3x3', '3x1', '2x2', '1x3', '2x1', '2x3', '3x4', '3x2'],
-    ['widget', 'battery'],
     ['library', 'github', 'open source'],
     ['game', 'puzzle', 'kill time']
 ];
